@@ -1,0 +1,46 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+}
+
+button {
+  border: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 500px;
+  background: #f1f1f1;
+  margin: 100px auto 0;
+  word-break: break-all;
+  border: 1px solid rgba(0, 0, 0, 0.274);
+}
+
+select {
+  margin-top: 10px;
+}
+
+.contents {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.contents p {
+  background: #a8a8a8;
+}
+
+.contents .price {
+  color: #f5eeee;
+}
+
+.sold_out {
+  text-decoration: line-through;
+  color: #bebebe;
+}

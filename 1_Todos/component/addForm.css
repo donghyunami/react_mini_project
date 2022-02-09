@@ -1,0 +1,22 @@
+.addFromWrap {
+    position: relative;
+    display: flex;
+}
+
+input {
+    display: inline-block;
+    border-radius: 8px;
+    border: 1px solid rgba(161, 155, 155, 0.5);
+    box-shadow: 0 3px 6px 1px rgb(64 60 68 / 20%);
+    font-size: 2rem;
+    outline: none;
+    padding: 5px 15px;
+    color: #5a5959;
+}
+
+.allBtn {
+    position: absolute;
+    top: -1px;
+    right: 107px;
+    margin-top: 4px;
+}
