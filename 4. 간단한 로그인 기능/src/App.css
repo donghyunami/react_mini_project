@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+}
+ul,
+li {
+  list-style: none;
+}
+
+.container {
+    width: 55%;
+    margin: 2.5rem auto;
+}
+
+/* header */
+header {
+    width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > h2 {
+    font-size: 2.2rem;
+}
+nav ul {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  padding: .5rem;
+  font-size: 1.5em;
+  margin-left: 1.2rem;
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 3px;
+  background: #dfdfdf;
+}
+
+/* days Layout */
+.view-days {
+    margin-top: 2.5rem;
+}
+
+.view-days ul {
+    display: flex;
+    font-size: 1.3em;
+}
+
+.view-days ul li {
+    flex: 18% 0;
+   margin-left: .7em;
+    /* width: 130px; */
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    background-color: #1E90FF;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.view-days ul li:hover {
+    opacity: .8;
+}
+
+

@@ -1,0 +1,22 @@
+{
+   "users": [
+       {
+           "id": 1,
+           "email": "qqq12@naver.com",
+           "name": "Mike",
+           "password": "qwert123"
+       },
+       {
+           "id": 2,
+           "email": "aaadd11@gmail.com",
+           "name": "Aile",
+           "password": "aaa456"
+       },
+       {
+           "id": 3,
+           "email": "edom@naver.com",
+           "name": "John",
+           "password": "bbb789"
+       }
+   ]
+}
