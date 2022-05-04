@@ -1,0 +1,12 @@
+.Nav {
+    display: flex;
+    background: #e6c1bd;
+}
+
+.Logo {
+    margin: 21px;
+}
+
+h1 {
+    font-size: 2rem;
+}
