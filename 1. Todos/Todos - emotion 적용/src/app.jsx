@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 // import Footer from './component/footer';
-import TodoList from './component/todos';
-import Nav from './component/nav';
+import TodoList from './components/todos';
+import Nav from './components/nav';
 
 function App(props) {
   const [Todos, setTodos] = useState([
