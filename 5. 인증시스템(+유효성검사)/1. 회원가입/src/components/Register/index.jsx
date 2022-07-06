@@ -1,8 +1,8 @@
 import React from 'react';
-import styled from './userForm.module.css';
+import styled from './register.module.css';
 import { useState, useRef } from 'react';
 
-const UserForm = () => {
+const Register = () => {
   const isFormValue = useRef(false);
   const [inputs, setInputs] = useState({
     email: '',
@@ -36,9 +36,7 @@ const UserForm = () => {
 
     switch (name) {
       case 'email':
-        setIsEmail(
-          isValidProps['isValidEmail'].test(value),
-        );
+        setIsEmail(isValidProps['isValidEmail'].test(value));
         break;
       case 'pw':
         setIsPw(isValidProps['isPw'].test(value));
@@ -118,15 +116,9 @@ const UserForm = () => {
       </h1>
       <hr />
       <div className={styled.frmWrap}>
-        <form
-          onSubmit={onSubmit}
-          className={styled.frmGroup}
-        >
+        <form onSubmit={onSubmit} className={styled.frmGroup}>
           <div className={styled.inputGroup}>
-            <label
-              className={styled.inputName}
-              htmlFor="email"
-            >
+            <label className={styled.inputName} htmlFor="email">
               이메일<span className={styled.ico}>*</span>
             </label>
             <div className={styled.inputWrap}>
@@ -147,18 +139,13 @@ const UserForm = () => {
                 onBlur={isValidValue}
                 value={email}
               />
-              <button
-                type="button"
-                className={styled.checkBtn}
-              >
+              <button type="button" className={styled.checkBtn}>
                 중복확인
               </button>
               {isFocus.isEmail && (
                 <p
                   className={`${styled.valid} ${
-                    isEmail
-                      ? styled.validsuccess
-                      : styled.validError
+                    isEmail ? styled.validsuccess : styled.validError
                   }`}
                 >
                   {isEmail
@@ -169,10 +156,7 @@ const UserForm = () => {
             </div>
           </div>
           <div className={styled.inputGroup}>
-            <label
-              className={styled.inputName}
-              htmlFor="pw"
-            >
+            <label className={styled.inputName} htmlFor="pw">
               비밀번호<span className={styled.ico}>*</span>
             </label>
             <div className={styled.inputWrap}>
@@ -196,9 +180,7 @@ const UserForm = () => {
               {isFocus.isPw && (
                 <p
                   className={`${styled.valid} ${
-                    isPw
-                      ? styled.validsuccess
-                      : styled.validError
+                    isPw ? styled.validsuccess : styled.validError
                   }`}
                 >
                   문자와 특수문자 조합의 6 ~ 24자리를 입력
@@ -207,10 +189,7 @@ const UserForm = () => {
             </div>
           </div>
           <div className={styled.inputGroup}>
-            <label
-              className={styled.inputName}
-              htmlFor="pw-check"
-            >
+            <label className={styled.inputName} htmlFor="pw-check">
               비밀번호 확인
               <span className={styled.ico}>*</span>
             </label>
@@ -234,10 +213,7 @@ const UserForm = () => {
             </div>
           </div>
           <div className={styled.inputGroup}>
-            <label
-              className={styled.inputName}
-              htmlFor="name"
-            >
+            <label className={styled.inputName} htmlFor="name">
               이름<span className={styled.ico}>*</span>
             </label>
             <div className={styled.inputWrap}>
@@ -253,48 +229,6 @@ const UserForm = () => {
                 value={name}
               />
             </div>
-          </div>
-          <div className={styled.inputGroup}>
-            <label
-              className={styled.inputName}
-              htmlFor="gender"
-            >
-              성별
-              <div className={styled.inputWrap}>
-                <input
-                  type="radio"
-                  name="gender"
-                  id="male"
-                  value="male"
-                  checked={genderSelect.gender === 'male'}
-                  onChange={onChangeGender}
-                />
-                <input
-                  type="radio"
-                  name="gender"
-                  id="female"
-                  value="female"
-                  checked={genderSelect.gender === 'female'}
-                  onChange={onChangeGender}
-                />
-              </div>
-            </label>
-          </div>
-          <div className={styled.inputGroup}>
-            <label
-              className={styled.inputName}
-              htmlFor="birth"
-            >
-              생년월일
-            </label>
-            <div className={styled.inputWrap}></div>
-            <input
-              type="date"
-              id="birth"
-              name="birth"
-              onChange={onFormChange}
-              value={birth}
-            />
           </div>
           <button
             onClick={e => {
@@ -327,4 +261,4 @@ const UserForm = () => {
   );
 };
 
-export default UserForm;
+export default Register;

@@ -14,6 +14,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .frmGroup {
   /* margin: 0 172px; 양 옆 줄간격 맞추기 위함 */
   /* border: 1px solid #807a7a; */
@@ -29,12 +30,22 @@
   font-weight: bold;
 }
 
+.inputName.genderLabel {
+  display: inline-block;
+  position: relative;
+  top: -15px;
+  margin-top: 20px;
+  font-size: 12px;
+}
+
 .inputWrap {
   margin-top: 8px;
 }
+
 .inputGroup {
   position: relative;
 }
+
 .inputGroup input {
   outline: none;
   width: 150px;
@@ -56,10 +67,12 @@ button {
   outline: none;
   transition: 0.2s;
 }
+
 button:active {
   position: relative;
   top: -3px;
 }
+
 .checkBtn {
   position: relative;
   top: 1px;
@@ -69,6 +82,7 @@ button:active {
   padding: 5px;
   margin: 0 0.3rem;
 }
+
 .frmBtn {
   border: 1px solid #dcdcdc;
   width: 167px;
@@ -82,6 +96,7 @@ button:active {
 .frmBtn[type='submit'] {
   background-color: #77afe4;
 }
+
 .frmBtn[type='reset'] {
   background-color: #ff6347;
 }
@@ -93,12 +108,15 @@ button:active {
   font-size: 13px;
   font-weight: 600;
 }
+
 .validsuccess {
   color: #448044;
 }
+
 .validError {
   color: #ee1919;
 }
+
 .ico {
   color: #d8445d;
 }

@@ -1,9 +1,9 @@
 import React from 'react';
-import UserForm from './components/UserForm/';
+import Register from './components/Register';
 function App() {
   return (
     <div className="App">
-      <UserForm />
+      <Register />
     </div>
   );
 }
