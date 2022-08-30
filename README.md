@@ -5,7 +5,7 @@
 <hr/>  
 <br>
 
-### 설치하기
+### Clone This repository
 
 ```bash
   $ git clone git@github.com:Dhyunlee/react_mini_project.git
