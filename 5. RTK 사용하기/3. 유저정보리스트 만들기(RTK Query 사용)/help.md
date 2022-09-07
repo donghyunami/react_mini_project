@@ -22,7 +22,6 @@ data/db.json(더미 데이터)를 사용하기 위해서는 전역으로 json-se
 
 ```json
   "scripts": {
-    "start": "react-scripts start",
     "server": "json-server -p 3006 -w data/db.json"
   },
 ```
