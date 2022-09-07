@@ -1,0 +1,46 @@
+{
+    "contacts": [
+        {
+            "id": "1",
+            "name": "Dipesh Malvia",
+            "email": "dipesh@gmail.com",
+            "nickname": "Malvia",
+            "age": 22
+        },
+        {
+            "id": "2",
+            "name": "Mike J",
+            "email": "mike@rediffmail.com",
+            "nickname": "Mikei",
+            "age": 30
+        },
+        {
+            "id": "3",
+            "name": "Maximum",
+            "email": "max@yahoo.com",
+            "nickname": "Maximums",
+            "age": 45
+        },
+        {
+            "id": "4",
+            "name": "Gamsa",
+            "email": "Gamsa@gmail.com",
+            "nickname": "thankU",
+            "age": 28
+        },
+        {
+            "id": "5",
+            "name": "Amit",
+            "email": "amit@gmail.com",
+            "nickname": "Amitj",
+            "age": 19
+        },
+        {
+            "id": "6",
+            "name": "Mike John",
+            "email": "mike@outlook.com",
+            "nickname": "John Ahn",
+            "age": 32
+        }
+    ]
+}
