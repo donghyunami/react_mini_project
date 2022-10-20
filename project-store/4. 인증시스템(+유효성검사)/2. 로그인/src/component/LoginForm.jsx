@@ -1,8 +1,7 @@
 import { useState, useContext } from 'react';
-import styled from 'styled-components';
+import styled from '@emotion/styled'
 import { UserContext } from '../store/userContext';
 import { fetchLogin } from '../utils/fetchLogin';
-import { useHistory } from 'react-router-dom';
 
 // 변수를 export하면 불러올 때 {}
 // require("../utils/fetchLogin")
@@ -53,9 +52,6 @@ function LoginForm() {
   const { setUser, isAuth, setIsAuth } = useContext(UserContext);
   // console.log(useContext(UserContext)) //{user: '', setUser: ƒ}
 
-  //url 이동을 위한 useHistory
-  const history = useHistory();
-
   //input에서 입력한 아이디와 비밀번호 정보를 담기위한 state
   const [userForm, setUserForm] = useState({
     email: '',
@@ -83,7 +79,6 @@ function LoginForm() {
       setUser(user);
       setIsAuth(!isAuth);
       //성공하면 해당 url로 이동(main페이지로)
-      history.replace('/');
     } catch (error) {
       //실패하면 throw new Error("") 값 출력
       window.alert(`error: 네트워크 오류가 발생했습니다.\n 관리자에게 문의해주세요`);

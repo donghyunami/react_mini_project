@@ -8,6 +8,7 @@ export const fetchLogin = async ({ email, password }) => {
     if (data) {
       //서버통신이 성공적으로 이루어지면 users에 json값 대입
       const users = data;
+      console.log(users)
 
       const user = users.find(user => user.email === email);
       //일치하는 user가 없거나, 비밀번호가 틀리면 해당 에러 생성
