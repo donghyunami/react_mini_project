@@ -1,0 +1,11 @@
+.counter {
+    margin-top: 130px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.counter button {
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 25px;
+}
