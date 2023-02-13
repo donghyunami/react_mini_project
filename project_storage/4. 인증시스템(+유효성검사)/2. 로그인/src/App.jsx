@@ -3,7 +3,8 @@ import UserProviderContext from "./store/userContext";
 import LoginForm from "./component/LoginForm";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Nav from "./component/Nav";
-function App() {
+
+export default function App() {
   return (
     <div className="App">
       <UserProviderContext>
@@ -18,4 +19,4 @@ function App() {
   );
 }
 
-export default App;
+// export default App;
